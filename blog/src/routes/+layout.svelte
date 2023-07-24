@@ -1,5 +1,7 @@
-<script>
-  import "../app.postcss";
+
+<script lang="ts">
+    import { base } from '$app/paths';
+    import "../app.postcss";
   import { NavBrand, NavHamburger, NavLi, NavUl, Navbar } from 'flowbite-svelte';
 </script>
 
@@ -13,9 +15,9 @@
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl>
-        <NavLi href="/" active = {true}>Home</NavLi>
-        <NavLi href="/Blog">Blog</NavLi>
-        <NavLi href="/UnityGame">Unity Game</NavLi>
+        <NavLi href="{base}/" active = {true}>Home</NavLi>
+        <NavLi href="{base}/Blog">Blog</NavLi>
+        <NavLi href="{base}/UnityGame">Unity Game</NavLi>
     </NavUl>
   </Navbar>
 
