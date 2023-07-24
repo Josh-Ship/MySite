@@ -1,9 +1,12 @@
 {
+  "homepage": "http://Josh-Ship.github.io/MySite",
   "name": "blog",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "vite dev --host --port 5000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
