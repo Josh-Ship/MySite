@@ -1,4 +1,3 @@
-<br>
 <p class="text">
     Making this blog site because I wanted to see if SvelteKit was any good,
     so far so good.
